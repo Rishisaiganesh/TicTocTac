@@ -6,10 +6,12 @@ namespace TicTacToc
     {
         static void Main(string[] args)
         {
-            Tic_TacToc tic = new Tic_TacToc();         
-            tic.createBoard();                      
-            char usersChoice = tic.chooseUserChar();
-            Console.WriteLine("Users choice is :" + usersChoice);
+
+            char[] board = Tic_TacToc .createBoard();                 
+            Console.WriteLine(board);
+            char choose = Tic_TacToc.chooseUserChar();
+            Console.WriteLine("Your choice is " + choose);
+            Tic_TacToc.showBoard(board);
 
             Console.ReadKey();
         }
