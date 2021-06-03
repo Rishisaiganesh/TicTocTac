@@ -13,7 +13,7 @@ namespace TicTacToc
             Console.WriteLine("Your choice is " + choose);
             Tic_TacToc.showBoard(board);
             int userMove = Tic_TacToc.getUserMove(board);
-
+            Tic_TacToc.makeMove(board, userMove, choose);
             Console.ReadKey();
         }
     }
