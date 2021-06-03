@@ -6,7 +6,6 @@ namespace TicTacToc
 {
     class Tic_TacToc
     {
-
         public static char[] createBoard()
         {
             char[] board = new char[10];
@@ -74,3 +73,4 @@ namespace TicTacToc
         }
     }
 }
+
